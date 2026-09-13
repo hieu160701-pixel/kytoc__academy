@@ -202,6 +202,51 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 5.5 Học viên tiêu biểu (Alumni) */}
+      <section className="py-20 bg-background border-y">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Học viên tiêu biểu</h2>
+            <p className="text-foreground/70 max-w-2xl mx-auto">Những gương mặt xuất sắc đã áp dụng thành công kiến thức thực chiến vào lộ trình thăng tiến sự nghiệp.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <InstructorCard
+              name="Anh Trần Văn A"
+              role="Supply Chain Manager"
+              company="Công ty TNHH ABC Việt Nam"
+              image="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2574"
+              color="teal"
+            />
+            <InstructorCard
+              name="Chị Nguyễn Thị B"
+              role="Trưởng phòng Mua hàng"
+              company="Tập đoàn Thương mại XYZ"
+              image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576"
+              color="primary"
+            />
+            <InstructorCard
+              name="Anh Lê Hoàng C"
+              role="Chuyên viên Xuất Nhập Khẩu"
+              company="Logistics Forwarder HN"
+              image="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574"
+              color="blue"
+            />
+            <InstructorCard
+              name="Chị Phạm Thu D"
+              role="Sourcing Specialist"
+              company="Công ty Nội thất Global"
+              image="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661"
+              color="green"
+            />
+          </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-foreground/60 text-sm mb-4">Bạn có thể gửi hình ảnh thực tế của học viên sau để thay thế cho các ảnh minh họa phía trên.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Partners Section */}
       <section className="py-16 bg-white border-y">
         <div className="container mx-auto px-4">
