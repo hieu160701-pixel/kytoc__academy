@@ -1,21 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #C2410C;
+  --color-primary-foreground: #FFFFFF;
+  
+  --color-background: #F3EFE6;
+  --color-foreground: #1C1914;
+  
+  --color-card: #FFFCF6;
+  --color-card-foreground: #1C1914;
+  
+  --color-popover: #FFFCF6;
+  --color-popover-foreground: #1C1914;
+
+  --color-secondary: #EADDD7;
+  --color-secondary-foreground: #1C1914;
+
+  --color-muted: #EADDD7;
+  --color-muted-foreground: #737373;
+
+  --color-accent: #EADDD7;
+  --color-accent-foreground: #1C1914;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #f8fafc;
+
+  --color-border: #DBCDBE;
+  --color-input: #DBCDBE;
+  --color-ring: #C2410C;
+
+  /* Custom IP tracks */
+  --color-kytoc-teal: #0F5F58;
+  --color-kytoc-green: #2F6A2C;
+  --color-kytoc-blue: #1D4E89;
+  --color-kytoc-purple: #5B21B6;
+
+  --radius-lg: 0.75rem;
+  --radius-md: calc(0.75rem - 2px);
+  --radius-sm: calc(0.75rem - 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-background text-foreground;
+  }
 }
