@@ -6,6 +6,7 @@ export default function BlogPage() {
   const posts = [
     {
       id: 1,
+      slug: "cap-nhat-quy-dinh-hai-quan-2026",
       title: "Cập nhật Quy định Hải quan và Thuế XNK mới nhất 2026",
       excerpt: "Nắm bắt nhanh các thay đổi quan trọng trong thông tư mới về thủ tục thông quan hàng hóa tuyến biên giới đường bộ Việt - Trung.",
       date: "12/09/2026",
@@ -15,6 +16,7 @@ export default function BlogPage() {
     },
     {
       id: 2,
+      slug: "bi-quyet-sourcing-hang-1688",
       title: "Bí quyết Sourcing Hàng 1688 Tận Xưởng, Tối Ưu TCO",
       excerpt: "Quy trình 5 bước đàm phán, thanh toán và vận chuyển để mang lại biên lợi nhuận cao nhất cho doanh nghiệp TMĐT.",
       date: "05/09/2026",
@@ -24,6 +26,7 @@ export default function BlogPage() {
     },
     {
       id: 3,
+      slug: "huong-dan-lap-packing-list",
       title: "Hướng dẫn lập Packing List và Commercial Invoice chuẩn 100%",
       excerpt: "Nghiệp vụ chứng từ cốt lõi giúp lô hàng không bao giờ bị giữ lại cửa khẩu chỉ vì lỗi sai sót mặt chữ.",
       date: "01/09/2026",
@@ -33,6 +36,7 @@ export default function BlogPage() {
     },
     {
       id: 4,
+      slug: "phan-biet-incoterms-2020",
       title: "Phân biệt Incoterms 2020: FCA, DPU, DDP áp dụng tuyến bộ",
       excerpt: "Hiểu đúng bản chất của các điều kiện giao hàng và cách phân chia rủi ro thực tế khi thuê xe tải liên vận.",
       date: "25/08/2026",
@@ -42,6 +46,7 @@ export default function BlogPage() {
     },
     {
       id: 5,
+      slug: "quan-tri-rui-ro-case-study-deka",
       title: "Quản trị Rủi ro trong Chuỗi cung ứng: Case study từ DEKA",
       excerpt: "Làm thế nào DEKA Furniture đảm bảo đúng tiến độ lắp đặt ghế rạp chiếu phim trong bối cảnh tắc biên?",
       date: "20/08/2026",
@@ -63,25 +68,27 @@ export default function BlogPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
-            <Card key={post.id} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 group cursor-pointer bg-card flex flex-col h-full">
-              <div className="relative h-48 overflow-hidden bg-gray-200">
-                <div className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: `url('${post.image}')` }}></div>
-                <div className="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                  {post.category}
+            <Link href={`/tin-tuc/${post.slug}`} key={post.id} className="block group">
+              <Card className="overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 bg-card flex flex-col h-full">
+                <div className="relative h-48 overflow-hidden bg-gray-200">
+                  <div className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: `url('${post.image}')` }}></div>
+                  <div className="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    {post.category}
+                  </div>
                 </div>
-              </div>
-              <CardContent className="p-6 flex-grow flex flex-col">
-                <div className="flex items-center gap-4 text-xs text-foreground/60 mb-3">
-                  <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {post.date}</span>
-                  <span className="flex items-center gap-1"><User className="w-3 h-3" /> {post.author}</span>
-                </div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">{post.title}</h3>
-                <p className="text-sm text-foreground/70 mb-6 line-clamp-3 flex-grow">{post.excerpt}</p>
-                <div className="text-primary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Đọc tiếp <ArrowRight className="w-4 h-4" />
-                </div>
-              </CardContent>
-            </Card>
+                <CardContent className="p-6 flex-grow flex flex-col">
+                  <div className="flex items-center gap-4 text-xs text-foreground/60 mb-3">
+                    <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {post.date}</span>
+                    <span className="flex items-center gap-1"><User className="w-3 h-3" /> {post.author}</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">{post.title}</h3>
+                  <p className="text-sm text-foreground/70 mb-6 line-clamp-3 flex-grow">{post.excerpt}</p>
+                  <div className="text-primary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Đọc tiếp <ArrowRight className="w-4 h-4" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
