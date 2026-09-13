@@ -202,16 +202,70 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. Đối tác (Partners Marquee) */}
-      <section className="py-12 bg-background border-t">
-        <div className="container mx-auto px-4 overflow-hidden">
-          <p className="text-center text-sm font-medium text-foreground/50 mb-8 uppercase tracking-widest">ĐỐI TÁC CHIẾN LƯỢC CỦA CHÚNG TÔI</p>
-          <div className="flex space-x-12 animate-marquee items-center justify-center opacity-70">
-            <div className="text-2xl font-bold font-mono">DPT VINA</div>
-            <div className="text-2xl font-bold font-mono text-red-600">KỲ TỐC LOGISTICS</div>
-            <div className="text-2xl font-bold font-mono text-red-700">DEKA FURNITURE</div>
-            <div className="text-2xl font-bold font-mono">EMPEROR</div>
-            <div className="text-2xl font-bold font-mono">BONA</div>
+      {/* Partners Section */}
+      <section className="py-16 bg-white border-y">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-foreground/50 font-medium mb-8 uppercase tracking-wider">Hệ sinh thái hậu thuẫn & Đối tác doanh nghiệp</p>
+          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            {/* Logos placeholder - will be replaced with actual partner logos */}
+            <h3 className="text-2xl font-bold font-heading">Kỳ Tốc Logistics</h3>
+            <h3 className="text-2xl font-bold font-heading text-red-600">DEKA Furniture</h3>
+            <h3 className="text-2xl font-bold font-heading">DPT VINA</h3>
+            <h3 className="text-2xl font-bold font-heading">1688 Sourcing</h3>
+            <h3 className="text-2xl font-bold font-heading">Taobao</h3>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery / Thực chiến Section */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Thực Chiến Không Chỉ Là Khẩu Hiệu</h2>
+            <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
+              Hình ảnh thực tế các hoạt động học tập, kiến tập tại kho bãi và những buổi xử lý chứng từ trực tiếp cùng chuyên gia của Kỳ Tốc Academy.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-2xl h-[400px]">
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070" alt="Lớp học thực chiến" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <h4 className="text-white font-bold text-xl">Lớp học tương tác cao</h4>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-2xl h-[192px]">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070" alt="Thực tập tại kho bãi" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <h4 className="text-white font-bold">Thực hành kho bãi</h4>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-2xl h-[192px]">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070" alt="Phân tích chứng từ" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <h4 className="text-white font-bold">Review chứng từ</h4>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-2xl h-[192px]">
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070" alt="Thảo luận nhóm" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <h4 className="text-white font-bold">Làm việc nhóm</h4>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-2xl h-[192px]">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070" alt="Hỗ trợ 1-1" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <h4 className="text-white font-bold">Support trực tiếp 1-1</h4>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-foreground/60 text-sm mb-4">Bạn có thể gửi hình ảnh thực tế sau để thay thế cho các ảnh minh họa phía trên.</p>
           </div>
         </div>
       </section>
