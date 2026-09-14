@@ -42,12 +42,6 @@ export function CourseCard({ title, slug, track, color, duration, format, descri
             {description}
           </p>
         </CardContent>
-        <CardFooter className="pt-0 border-t border-gray-100 mt-4 flex items-center justify-between">
-          <div className="flex items-center gap-2 mt-4">
-            <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden flex-shrink-0"></div>
-            <span className="text-sm font-medium">{instructor}</span>
-          </div>
-        </CardFooter>
       </Card>
     </Link>
   );

@@ -16,18 +16,17 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
               Học viện nghiệp vụ SCM<br />
-              <span className="text-primary">của người đang chạy đơn</span>
+              <span className="text-primary">của người đang vận hành</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
               Học trên đơn thật — làm trên tuyến Trung-Việt. Chúng tôi đào tạo nghiệp vụ Supply Chain, Logistics và Mua hàng bằng quy trình thực chiến.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button size="lg" className="text-base rounded-full px-8 py-6 bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/30">
-                Khám phá khóa học
-              </Button>
-              <Button size="lg" variant="outline" className="text-base rounded-full px-8 py-6 bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-md">
-                <PlayCircle className="mr-2 w-5 h-5" /> Video giới thiệu
-              </Button>
+              <Link href="/khoa-hoc">
+                <Button size="lg" className="text-base rounded-full px-8 py-6 bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/30 w-full sm:w-auto">
+                  Khám phá khóa học
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -127,7 +126,7 @@ export default function HomePage() {
               duration="18 buổi"
               format="Offline / Hybrid"
               description="Tổng quan vận hành SCM. Tuyến TQ-VN, Incoterms trên tuyến bộ, đặc tả hàng từ packing list."
-              instructor="Mr. Tít (Head H1)"
+              instructor="Ms. Linh (Giám đốc Điều hành)"
               bgImage="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070"
             />
             <CourseCard
@@ -138,7 +137,7 @@ export default function HomePage() {
               duration="14 buổi"
               format="Offline / Hybrid"
               description="Vai trò Purchasing, Sourcing 1688, phân tích TCO, hoàn thuế XK TQ, đàm phán hợp đồng."
-              instructor="Ms. Anna (Head H2)"
+              instructor="Ms. Thoa (Head of Purchasing)"
               bgImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070"
             />
             <CourseCard
@@ -149,7 +148,7 @@ export default function HomePage() {
               duration="12 buổi"
               format="Offline / Hybrid"
               description="Khóa học Flagship. Engine 5 bước A1-A4, TCO trước khi chạy đơn, P&L giải pháp vận hành."
-              instructor="Mr. Alex (CEO)"
+              instructor="Mr. Đạo (Head of Purchasing)"
               bgImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070"
               isHot={true}
             />
@@ -171,31 +170,31 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <InstructorCard
-              name="Mr. Alex"
-              role="CEO / SCM Manager"
-              company="DPT VINA HOLDINGS"
-              image="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574"
+              name="Ms. Thoa"
+              role="Head of Purchasing"
+              company="Đông Đô"
+              image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576"
               color="primary"
             />
             <InstructorCard
-              name="Ms. Anna"
-              role="Head of Purchasing (H1)"
-              company="Kỳ Tốc Logistics"
-              image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576"
+              name="Mr. Đạo"
+              role="Head of Purchasing"
+              company="CĐT Luxora Vĩnh Yên, Bắc Giang"
+              image="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574"
               color="green"
             />
             <InstructorCard
-              name="Mr. Tít"
-              role="Head of Logistics"
-              company="Kỳ Tốc Logistics"
-              image="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2574"
+              name="Ms. Hoa"
+              role="Head of Purchasing"
+              company="Kỳ Tốc"
+              image="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661"
               color="teal"
             />
             <InstructorCard
-              name="Ms. Hương"
-              role="Head of Docs (H2)"
-              company="Kỳ Tốc Logistics"
-              image="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661"
+              name="Ms. Linh"
+              role="Giám đốc Điều hành"
+              company="Kỳ Tốc"
+              image="https://images.unsplash.com/photo-1598550874175-4d0ef43ee90d?q=80&w=2661"
               color="blue"
             />
           </div>
@@ -251,13 +250,12 @@ export default function HomePage() {
       <section className="py-16 bg-white border-y">
         <div className="container mx-auto px-4">
           <p className="text-center text-foreground/50 font-medium mb-8 uppercase tracking-wider">Hệ sinh thái hậu thuẫn & Đối tác doanh nghiệp</p>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Logos placeholder - will be replaced with actual partner logos */}
-            <h3 className="text-2xl font-bold font-heading">Kỳ Tốc Logistics</h3>
-            <h3 className="text-2xl font-bold font-heading text-red-600">DEKA Furniture</h3>
-            <h3 className="text-2xl font-bold font-heading">DPT VINA</h3>
-            <h3 className="text-2xl font-bold font-heading">1688 Sourcing</h3>
-            <h3 className="text-2xl font-bold font-heading">Taobao</h3>
+          <div className="flex flex-wrap justify-center items-center gap-12 transition-all duration-500">
+            <img src="/images/partners/partner2.png" alt="Kỳ Tốc Logistics" className="h-12 md:h-16 object-contain" />
+            <img src="/images/partners/partner1.png" alt="DEKA Furniture" className="h-12 md:h-16 object-contain" />
+            <img src="/images/partners/partner3.png" alt="Beta Cinemas" className="h-12 md:h-16 object-contain" />
+            <img src="/images/partners/partner4.png" alt="AEON" className="h-12 md:h-16 object-contain" />
+            <img src="/images/partners/partner5.png" alt="1688" className="h-12 md:h-16 object-contain" />
           </div>
         </div>
       </section>
@@ -273,44 +271,25 @@ export default function HomePage() {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-2xl h-[400px]">
-              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070" alt="Lớp học thực chiến" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <h4 className="text-white font-bold text-xl">Lớp học tương tác cao</h4>
-              </div>
+            {/* Large Image - 2x2 */}
+            <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-2xl h-[400px]">
+              <img src="/images/gallery/pic2.jpg" alt="Hình ảnh thực tế Kỳ Tốc Academy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
             
+            {/* Small Image 1 */}
             <div className="relative group overflow-hidden rounded-2xl h-[192px]">
-              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070" alt="Thực tập tại kho bãi" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <h4 className="text-white font-bold">Thực hành kho bãi</h4>
-              </div>
+              <img src="/images/gallery/pic1.jpg" alt="Hình ảnh thực tế Kỳ Tốc Academy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
             
+            {/* Small Image 2 */}
             <div className="relative group overflow-hidden rounded-2xl h-[192px]">
-              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070" alt="Phân tích chứng từ" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <h4 className="text-white font-bold">Review chứng từ</h4>
-              </div>
+              <img src="/images/gallery/pic4.jpg" alt="Hình ảnh thực tế Kỳ Tốc Academy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
             
-            <div className="relative group overflow-hidden rounded-2xl h-[192px]">
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070" alt="Thảo luận nhóm" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <h4 className="text-white font-bold">Làm việc nhóm</h4>
-              </div>
+            {/* Wide Image */}
+            <div className="col-span-2 relative group overflow-hidden rounded-2xl h-[192px]">
+              <img src="/images/gallery/pic3.jpg" alt="Hình ảnh thực tế Kỳ Tốc Academy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-            
-            <div className="relative group overflow-hidden rounded-2xl h-[192px]">
-              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070" alt="Hỗ trợ 1-1" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <h4 className="text-white font-bold">Support trực tiếp 1-1</h4>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center mt-12">
-            <p className="text-foreground/60 text-sm mb-4">Bạn có thể gửi hình ảnh thực tế sau để thay thế cho các ảnh minh họa phía trên.</p>
           </div>
         </div>
       </section>
@@ -328,20 +307,24 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* Ky Toc Logistics */}
             <div className="flex flex-col md:flex-row gap-6 items-center md:items-start bg-card p-6 rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-24 h-24 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center text-primary text-xl font-bold">KTL</div>
+              <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center p-2 bg-white rounded-xl shadow-sm border">
+                <img src="/images/partners/partner2.png" alt="Kỳ Tốc Logistics" className="max-w-full max-h-full object-contain" />
+              </div>
               <div>
                 <h3 className="text-2xl font-bold mb-2">Kỳ Tốc Logistics</h3>
-                <p className="text-foreground/70 text-sm mb-4">Đơn vị Vận tải đa phương thức & Dịch vụ XNK. Xử lý hàng ngàn container trên tuyến Trung - Việt với hệ thống kho bãi trực tiếp tại Quảng Châu, Bằng Tường, Hà Nội, TP.HCM.</p>
+                <p className="text-foreground/70 text-sm mb-4">Đơn vị Vận tải đa phương thức & Dịch vụ XNK. Xử lý hàng ngàn container trên tuyến Trung - Việt với hệ thống kho bãi trực tiếp tại Quảng Châu, Bằng Tường, Hà Nội, TP.HCM. Đặc biệt, đội ngũ giảng viên còn có sự góp mặt của các Head Cung ứng từ chính mạng lưới khách hàng doanh nghiệp lớn của chúng tôi.</p>
                 <div className="text-xs font-medium px-3 py-1 bg-gray-100 rounded-full inline-block">Nơi học viên thực hành thủ tục Hải quan</div>
               </div>
             </div>
 
             {/* DEKA Furniture */}
             <div className="flex flex-col md:flex-row gap-6 items-center md:items-start bg-card p-6 rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-24 h-24 rounded-full bg-red-600/10 flex-shrink-0 flex items-center justify-center text-red-600 text-xl font-bold">DEKA</div>
+              <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center p-2 bg-white rounded-xl shadow-sm border">
+                <img src="/images/partners/partner1.png" alt="DEKA Furniture" className="max-w-full max-h-full object-contain" />
+              </div>
               <div>
                 <h3 className="text-2xl font-bold mb-2">DEKA Furniture</h3>
-                <p className="text-foreground/70 text-sm mb-4">Công ty CP Thương mại Công nghiệp DEKA. Đối tác kiến tạo không gian, cung ứng trọn gói nội thất nhập khẩu cao cấp cho các rạp chiếu phim hàng đầu (Beta, Aeon).</p>
+                <p className="text-foreground/70 text-sm mb-4">Công ty CP Thương mại Công nghiệp DEKA - Đối tác chiến lược kiến tạo không gian. Cung ứng danh mục hàng hóa đa dạng từ máy móc, vật tư xây dựng, vật tư hoàn thiện đến nội thất. Tham gia các dự án quy mô lớn: rạp phim (Beta, Aeon), bệnh viện, dự án nhà ở thương mại & NOXH (2000-4000 căn hộ), và các resort khách sạn (500-1000 phòng).</p>
                 <div className="text-xs font-medium px-3 py-1 bg-gray-100 rounded-full inline-block">Nguồn Case study Mua hàng & Sourcing 1688</div>
               </div>
             </div>

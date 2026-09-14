@@ -8,8 +8,11 @@ export default function AboutPage() {
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Về Kỳ Tốc Academy</h1>
-          <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed mb-4">
             Học viện nghiệp vụ Chuỗi cung ứng (SCM) của những người đang ngày đêm chạy đơn. Chúng tôi tự hào mang đến môi trường đào tạo <span className="font-bold text-primary">thực chiến 100%</span>.
+          </p>
+          <p className="text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+            <strong>SCM (Supply Chain Management - Quản trị Chuỗi cung ứng)</strong> là toàn bộ quá trình quản lý luồng hàng hóa, dữ liệu và tài chính từ nhà cung cấp đến nhà sản xuất, nhà bán buôn, nhà bán lẻ và người tiêu dùng cuối cùng. Hiểu và làm chủ SCM giúp tối ưu hóa chi phí và tăng sức cạnh tranh cho doanh nghiệp.
           </p>
         </div>
 
@@ -63,10 +66,12 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
-                <Building2 className="text-primary w-8 h-8" /> 
-                Kỳ Tốc Logistics
-              </h3>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 flex-shrink-0 flex items-center justify-center bg-white p-2 rounded-xl shadow-sm border">
+                  <img src="/images/partners/partner2.png" alt="Kỳ Tốc Logistics" className="max-w-full max-h-full object-contain" />
+                </div>
+                <h3 className="text-2xl font-bold">Kỳ Tốc Logistics</h3>
+              </div>
               <p className="text-foreground/80 mb-6 leading-relaxed">
                 Đơn vị chủ lực trong việc vận tải đa phương thức và xử lý chuỗi cung ứng. Sở hữu hệ thống kho bãi trực tiếp tại Quảng Châu, Bằng Tường (Trung Quốc) và Hà Nội, TP.HCM (Việt Nam).
               </p>
@@ -88,12 +93,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center flex-col-reverse lg:flex-row-reverse">
             <div className="h-full min-h-[400px] bg-gray-200 rounded-2xl bg-cover bg-center shadow-lg lg:order-2" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069')" }}></div>
             <div className="lg:order-1">
-              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3 text-red-600">
-                <Target className="text-red-600 w-8 h-8" /> 
-                DEKA Furniture
-              </h3>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 flex-shrink-0 flex items-center justify-center bg-white p-2 rounded-xl shadow-sm border">
+                  <img src="/images/partners/partner1.png" alt="DEKA Furniture" className="max-w-full max-h-full object-contain" />
+                </div>
+                <h3 className="text-2xl font-bold text-red-600">DEKA Furniture</h3>
+              </div>
               <p className="text-foreground/80 mb-6 leading-relaxed">
-                Công ty CP Thương mại Công nghiệp DEKA - Đối tác chiến lược kiến tạo không gian. Cung ứng nội thất, thiết bị rạp phim chuyên nghiệp cho các dự án lớn như Aeon Beta Cinema, Beta Nowzone.
+                Công ty CP Thương mại Công nghiệp DEKA - Đối tác chiến lược kiến tạo không gian. Chuyên cung ứng danh mục đa dạng gồm máy móc, vật tư xây dựng, vật tư hoàn thiện và nội thất. Đã và đang tham gia các dự án lớn như: Rạp chiếu phim (Aeon Beta Cinema, Beta Nowzone), Bệnh viện, Khu đô thị thương mại & NOXH (2000-4000 căn hộ), và hệ thống Resort khách sạn (500-1000 phòng).
               </p>
               
               <div className="space-y-4">

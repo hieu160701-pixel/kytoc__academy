@@ -11,9 +11,9 @@ const courseData: Record<string, any> = {
     description: "Tổng quan vận hành SCM. Tuyến TQ-VN, Incoterms trên tuyến bộ, đặc tả hàng từ packing list.",
     price: "4.500.000đ",
     duration: "18 Buổi học",
-    instructorName: "Mr. Tít",
-    instructorRole: "Head of Logistics",
-    instructorDesc: "Hơn 8 năm kinh nghiệm thực chiến xử lý hàng chục ngàn container cho các doanh nghiệp lớn.",
+    instructorName: "Ms. Linh",
+    instructorRole: "Giám đốc Điều hành - Kỳ Tốc",
+    instructorDesc: "Chuyên gia về Xuất Nhập Khẩu, thủ tục và thuế quan với nhiều năm kinh nghiệm thực chiến.",
     bgImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070",
     outcomes: [
       "Hiểu toàn bộ quy trình Logistics tuyến Trung-Việt",
@@ -41,9 +41,9 @@ const courseData: Record<string, any> = {
     description: "Vai trò Purchasing, Sourcing 1688, phân tích TCO, hoàn thuế XK TQ, đàm phán hợp đồng.",
     price: "5.500.000đ",
     duration: "14 Buổi học",
-    instructorName: "Ms. Anna",
-    instructorRole: "Head of Purchasing (H1)",
-    instructorDesc: "Chuyên gia tìm kiếm nguồn hàng và tối ưu hóa chi phí (TCO) từ các xưởng sản xuất lớn nhất Quảng Châu.",
+    instructorName: "Ms. Thoa",
+    instructorRole: "Head of Purchasing - Đông Đô",
+    instructorDesc: "Chuyên gia tìm kiếm nguồn hàng và đàm phán thương mại, tối ưu hóa chi phí mua hàng.",
     bgImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070",
     outcomes: [
       "Tự tìm kiếm và đánh giá nhà cung cấp uy tín trên 1688, Taobao",
@@ -71,9 +71,9 @@ const courseData: Record<string, any> = {
     description: "Khóa học Flagship. Engine 5 bước A1-A4, TCO trước khi chạy đơn, P&L giải pháp vận hành.",
     price: "8.500.000đ",
     duration: "12 Buổi học",
-    instructorName: "Mr. Alex",
-    instructorRole: "CEO - DPT VINA HOLDINGS",
-    instructorDesc: "Kiến trúc sư của hệ sinh thái DPT VINA, tác giả của 'Engine 5 bước' độc quyền.",
+    instructorName: "Mr. Đạo",
+    instructorRole: "Head of Purchasing - CĐT Luxora Vĩnh Yên",
+    instructorDesc: "Kiến trúc sư của các hệ sinh thái vận hành lớn, chuyên về quản trị chuỗi cung ứng toàn diện.",
     bgImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070",
     outcomes: [
       "Làm chủ hệ thống vận hành Engine 5 bước độc quyền",
@@ -128,22 +128,7 @@ export default async function CourseDetailPage({ params }: { params: Promise<{ s
               </div>
             </div>
             
-            {/* Sidebar form (Desktop) */}
-            <div className="hidden lg:block relative">
-              <Card className="absolute top-0 right-0 w-full max-w-md shadow-2xl border-none">
-                <div className="h-48 bg-gray-200 rounded-t-xl bg-cover bg-center" style={{ backgroundImage: `url('${course.bgImage}')` }}></div>
-                <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-primary mb-4">{course.price}</div>
-                  <Button className="w-full text-lg py-6 rounded-xl mb-4" size="lg">Đăng ký giữ chỗ</Button>
-                  <ul className="space-y-3 text-sm text-foreground/70 mb-6">
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-green-600 shrink-0" /> Cam kết hỗ trợ việc làm sau khóa học</li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-green-600 shrink-0" /> Tặng kèm bộ tài liệu chứng từ XNK thực tế</li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-green-600 shrink-0" /> Truy cập kho video bài giảng trọn đời</li>
-                  </ul>
-                  <p className="text-xs text-center text-foreground/50">Khai giảng dự kiến: 15/10/2026</p>
-                </CardContent>
-              </Card>
-            </div>
+
           </div>
         </div>
       </section>
@@ -225,25 +210,7 @@ export default async function CourseDetailPage({ params }: { params: Promise<{ s
               </Tabs>
             </div>
             
-            {/* Mobile Registration Card */}
-            <div className="lg:hidden mt-8">
-              <Card className="w-full shadow-lg border">
-                <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-primary mb-4">{course.price}</div>
-                  <Button className="w-full text-lg py-6 rounded-xl mb-4" size="lg">Đăng ký giữ chỗ</Button>
-                  <p className="text-xs text-center text-foreground/50 mb-6">Khai giảng dự kiến: 15/10/2026</p>
-                  
-                  <div className="flex items-center gap-3 py-3 border-t">
-                    <CalendarDays className="w-5 h-5 text-primary" />
-                    <span className="text-sm">Lịch học: Tối 3,5,7 (19h00 - 21h30)</span>
-                  </div>
-                  <div className="flex items-center gap-3 py-3 border-t">
-                    <MapPin className="w-5 h-5 text-primary" />
-                    <span className="text-sm">Địa điểm: Tầng 3, tòa nhà DPT VINA</span>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+
           </div>
         </div>
       </section>

@@ -10,7 +10,7 @@ export default function CoursesPage() {
       duration: "18 buổi",
       format: "Offline / Hybrid",
       description: "Tổng quan vận hành SCM. Tuyến TQ-VN, Incoterms trên tuyến bộ, đặc tả hàng từ packing list.",
-      instructor: "Mr. Tít (Head H1)",
+      instructor: "Ms. Linh (Giám đốc Điều hành)",
       bgImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070",
     },
     {
@@ -21,7 +21,7 @@ export default function CoursesPage() {
       duration: "14 buổi",
       format: "Offline / Hybrid",
       description: "Vai trò Purchasing, Sourcing 1688, phân tích TCO, hoàn thuế XK TQ, đàm phán hợp đồng.",
-      instructor: "Ms. Anna (Head H2)",
+      instructor: "Ms. Thoa (Head of Purchasing)",
       bgImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070",
     },
     {
@@ -32,7 +32,7 @@ export default function CoursesPage() {
       duration: "10 buổi",
       format: "Offline / Hybrid",
       description: "Quy trình lưu kho bãi, đóng gói chuẩn xuất khẩu, điều phối xe tải, khai thác hàng rời.",
-      instructor: "Mr. Alex (CEO)",
+      instructor: "Ms. Hoa (Head of Purchasing)",
       bgImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070",
     },
     {
@@ -43,7 +43,7 @@ export default function CoursesPage() {
       duration: "12 buổi",
       format: "Offline / Hybrid",
       description: "Đọc hiểu CO, CQ, BL, tờ khai hải quan. Phân luồng, tra mã HS code, xử lý C/O Form E.",
-      instructor: "Ms. Hương (Head H2)",
+      instructor: "Ms. Linh (Giám đốc Điều hành)",
       bgImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070",
     },
     {
@@ -54,7 +54,7 @@ export default function CoursesPage() {
       duration: "12 buổi",
       format: "Offline / Hybrid",
       description: "Khóa học Flagship. Engine 5 bước A1-A4, TCO trước khi chạy đơn, P&L giải pháp vận hành.",
-      instructor: "Mr. Alex (CEO)",
+      instructor: "Mr. Đạo (Head of Purchasing)",
       bgImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070",
       isHot: true,
     }

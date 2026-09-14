@@ -3,31 +3,31 @@ import { InstructorCard } from "@/components/ui/InstructorCard";
 export default function InstructorsPage() {
   const instructors = [
     {
-      name: "Mr. Alex",
-      role: "CEO / SCM Manager",
-      company: "DPT VINA HOLDINGS",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574",
+      name: "Ms. Thoa",
+      role: "Head of Purchasing",
+      company: "Đông Đô",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576",
       color: "primary",
     },
     {
-      name: "Ms. Anna",
-      role: "Head of Purchasing (H1)",
-      company: "Kỳ Tốc Logistics",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576",
+      name: "Mr. Đạo",
+      role: "Head of Purchasing",
+      company: "CĐT Luxora Vĩnh Yên, Bắc Giang",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574",
       color: "green",
     },
     {
-      name: "Mr. Tít",
-      role: "Head of Logistics",
-      company: "Kỳ Tốc Logistics",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2574",
+      name: "Ms. Hoa",
+      role: "Head of Purchasing",
+      company: "Kỳ Tốc",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661",
       color: "teal",
     },
     {
-      name: "Ms. Hương",
-      role: "Head of Docs (H2)",
-      company: "Kỳ Tốc Logistics",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661",
+      name: "Ms. Linh",
+      role: "Giám đốc Điều hành",
+      company: "Kỳ Tốc",
+      image: "https://images.unsplash.com/photo-1598550874175-4d0ef43ee90d?q=80&w=2661",
       color: "blue",
     }
   ];

@@ -32,9 +32,11 @@ export default function Header() {
               <User className="w-5 h-5" />
             </Button>
           </div>
-          <Button className="hidden lg:flex rounded-full bg-primary hover:bg-primary/90 text-white shadow-md shadow-primary/20">
-            Nhận tư vấn
-          </Button>
+          <Link href="/lien-he" className="hidden lg:flex">
+            <Button className="rounded-full bg-primary hover:bg-primary/90 text-white shadow-md shadow-primary/20">
+              Nhận tư vấn
+            </Button>
+          </Link>
           
           <Button variant="ghost" size="icon" className="lg:hidden text-foreground">
             <Menu className="w-6 h-6" />

@@ -5,89 +5,125 @@ import Link from "next/link";
 
 // Fake data for blog posts based on the slugs we created
 const blogPosts = {
-  "cap-nhat-quy-dinh-hai-quan-2026": {
-    title: "Cập nhật Quy định Hải quan và Thuế XNK mới nhất 2026",
-    date: "12/09/2026",
-    author: "Admin KTL",
+  "quan-ly-chuoi-cung-ung-vlxd-nhap-khau-tu-trung-quoc-2026-thuc-trang-toan-dien-giai-phap-toi-uu": {
+    title: "Quản lý chuỗi cung ứng VLXD nhập khẩu từ Trung Quốc 2026: Thực trạng và Giải pháp",
+    date: "14/09/2026",
+    author: "Kỳ Tốc Academy",
+    category: "Chuỗi Cung Ứng",
+    image: "https://images.unsplash.com/photo-1541888081604-585e5091bf2e?q=80&w=2070",
+    content: `
+      <h2>1. Thực trạng Quản lý Chuỗi cung ứng Vật liệu Xây dựng (VLXD) năm 2026</h2>
+      <p>Năm 2026, thị trường Vật liệu xây dựng nhập khẩu từ Trung Quốc tiếp tục chứng kiến sự biến động lớn về giá cả, đứt gãy chuỗi cung ứng tạm thời tại các cửa khẩu và áp lực từ các chính sách kiểm soát chất lượng mới. Nhiều doanh nghiệp phải đối mặt với bài toán chi phí kho bãi tăng cao và thời gian giao hàng (lead time) không ổn định.</p>
+      
+      <h2>2. Khó khăn của Nhà thầu và Chủ đầu tư</h2>
+      <p>Đối với các dự án lớn, việc chậm trễ một lô hàng vật liệu có thể gây thiệt hại hàng tỷ đồng mỗi ngày. Nguyên nhân thường xuất phát từ việc thiếu tính toán Tổng chi phí sở hữu (TCO) và dự phòng rủi ro trong hợp đồng ngoại thương với đối tác Trung Quốc.</p>
+      
+      <h2>3. Giải pháp Tối ưu hóa Chuỗi cung ứng</h2>
+      <ul>
+        <li><strong>Đa dạng hóa nhà cung cấp:</strong> Không phụ thuộc vào một xưởng sản xuất duy nhất tại Quảng Đông hay Phật Sơn.</li>
+        <li><strong>Ứng dụng công nghệ:</strong> Sử dụng các phần mềm quản lý kho và theo dõi vận đơn (tracking) theo thời gian thực (Real-time).</li>
+        <li><strong>Quản lý rủi ro pháp lý:</strong> Đảm bảo 100% lô hàng có chứng nhận xuất xứ (C/O) và chứng nhận chất lượng (C/Q) minh bạch ngay từ đầu nguồn.</li>
+      </ul>
+      
+      <blockquote>Tại Kỳ Tốc Academy, chúng tôi luôn hướng dẫn học viên cách phân tích rủi ro trong quản trị SCM bằng các dự án thực tế, giúp doanh nghiệp tránh được những "cú sốc" từ thị trường. Nếu bạn gặp khó khăn, hãy liên hệ ngay Kỳ Tốc Academy để được hỗ trợ.</blockquote>
+    `
+  },
+  "cach-dam-phan-gia-voi-nha-cung-cap-trung-quoc": {
+    title: "Cách đàm phán giá với nhà cung cấp Trung Quốc hiệu quả nhất",
+    date: "10/09/2026",
+    author: "Ms. Anna",
+    category: "Mua hàng & Sourcing",
+    image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1974",
+    content: `
+      <h2>1. Hiểu Rõ Về Đối Tác - "Biết Người Biết Ta"</h2>
+      <p>Trước khi bắt đầu đàm phán, hãy tìm hiểu kỹ về nhà cung cấp trên 1688 hoặc Alibaba. Xem xét huy hiệu "Đầu trâu" (đối với 1688), số năm hoạt động, tỷ lệ phản hồi và quy mô nhà máy. Việc biết họ là công ty thương mại (Trading Company) hay xưởng sản xuất trực tiếp (Factory) sẽ quyết định chiến lược đàm phán của bạn.</p>
+      
+      <h2>2. Chiến Thuật Đàm Phán TCO (Total Cost of Ownership)</h2>
+      <p>Đừng chỉ nhìn vào đơn giá sản phẩm. Hãy đàm phán dựa trên TCO bao gồm: Giá hàng hóa + Phí vận chuyển nội địa (Freeship hoặc hỗ trợ phí) + Tỷ lệ hàng lỗi được bù trừ + Chi phí làm khuôn mẫu (Mould fee). Một xưởng có thể báo giá cao hơn một chút nhưng miễn phí ship nội địa và đóng gói chắc chắn đôi khi lại là lựa chọn rẻ hơn.</p>
+      
+      <h2>3. Khảo Giá và Sử Dụng "Mỏ Neo" Giá (Price Anchoring)</h2>
+      <ul>
+        <li>Luôn hỏi giá ít nhất 3-5 nhà cung cấp khác nhau để biết mặt bằng chung.</li>
+        <li>Khi đàm phán, hãy đưa ra một mức giá mục tiêu thấp hơn kỳ vọng một chút để có dư địa nhượng bộ.</li>
+        <li>Thể hiện bạn là một "người mua chuyên nghiệp" có tiềm năng mua số lượng lớn trong tương lai (dù hiện tại bạn chỉ đang mua test mẫu).</li>
+      </ul>
+      
+      <p><em>Lời khuyên:</em> Nếu bạn muốn tìm hiểu sâu hơn về quy trình Sourcing, hãy tham gia các khóa học Mua hàng thực chiến tại Kỳ Tốc Academy.</p>
+    `
+  },
+  "hang-hoa-cong-nghe-trung-quoc": {
+    title: "Xu hướng nhập khẩu Hàng hóa Công nghệ từ Trung Quốc",
+    date: "05/09/2026",
+    author: "Mr. Tít",
+    category: "Nghiệp vụ",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070",
+    content: `
+      <h2>1. Sự Trỗi Dậy Của Các Ngành Hàng Mới</h2>
+      <p>Trung Quốc không chỉ còn là "công xưởng gia công" mà đã trở thành trung tâm sáng tạo công nghệ. Các mặt hàng như thiết bị nhà thông minh (Smart Home), linh kiện xe điện (EV parts), và thiết bị năng lượng mặt trời đang là xu hướng nhập khẩu mạnh mẽ về Việt Nam.</p>
+      
+      <h2>2. Lưu Ý Về Thủ Tục Nhập Khẩu Hàng Công Nghệ</h2>
+      <p>Mặt hàng công nghệ, đặc biệt là thiết bị phát sóng, đồ gia dụng điện tử thường yêu cầu các giấy phép chuyên ngành gắt gao:</p>
+      <ul>
+        <li><strong>Hợp quy (CR):</strong> Bắt buộc đối với nhiều loại thiết bị điện tử, đồ gia dụng để đảm bảo an toàn.</li>
+        <li><strong>Kiểm tra chất lượng nhà nước:</strong> Yêu cầu đối với một số nhóm hàng cụ thể trước khi được thông quan.</li>
+        <li><strong>Giấy phép nhập khẩu thiết bị phát thu phát sóng vô tuyến điện.</strong></li>
+      </ul>
+      
+      <h2>3. Rủi Ro Thường Gặp</h2>
+      <p>Rủi ro lớn nhất không phải là giá cả, mà là hàng không đạt tiêu chuẩn kỹ thuật khi kiểm định, dẫn đến tình trạng hàng bị lưu bãi lâu ngày hoặc buộc tái xuất. Doanh nghiệp cần tham vấn rõ với xưởng sản xuất về các chứng chỉ CE, RoHS, FCC mà họ đã có.</p>
+      <p>Cần hỗ trợ về quy trình nhập khẩu và xin giấy phép chuyên ngành? Đội ngũ chuyên gia tại Kỳ Tốc Academy luôn sẵn sàng đồng hành cùng bạn.</p>
+    `
+  },
+  "trung-viet-logistics": {
+    title: "Trung - Việt Logistics: Tuyến đường huyết mạch và những lưu ý",
+    date: "01/09/2026",
+    author: "Mr. Alex",
     category: "Kiến thức Logistics",
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070",
     content: `
-      <h2>1. Thay đổi về thủ tục Hải quan điện tử</h2>
-      <p>Từ đầu năm 2026, Tổng cục Hải quan đã triển khai hệ thống thông quan tự động mới, yêu cầu 100% doanh nghiệp phải cập nhật chữ ký số và khai báo qua cổng VNSW phiên bản 3.0. Điều này giúp giảm thiểu thời gian chờ đợi tại cửa khẩu Lạng Sơn và Lào Cai xuống còn chưa đầy 2 giờ đối với luồng xanh.</p>
+      <h2>1. Tầm Quan Trọng Của Tuyến Đường Bộ Trung - Việt</h2>
+      <p>Với ưu thế giáp biên giới, vận tải đường bộ giữa Trung Quốc và Việt Nam chiếm tỷ trọng khổng lồ trong tổng kim ngạch xuất nhập khẩu. Các cửa khẩu trọng điểm như Hữu Nghị, Tân Thanh (Lạng Sơn), Móng Cái (Quảng Ninh) hay Kim Thành (Lào Cai) đóng vai trò là những yết hầu quan trọng.</p>
       
-      <h2>2. Biểu thuế xuất nhập khẩu ưu đãi đặc biệt ACFTA</h2>
-      <p>Các mặt hàng thuộc nhóm điện tử gia dụng và linh kiện cơ khí khi nhập khẩu từ Trung Quốc sẽ tiếp tục được hưởng mức thuế suất 0% nếu có C/O form E hợp lệ. Tuy nhiên, quy định về truy xuất nguồn gốc (Traceability) đã được siết chặt. Doanh nghiệp cần đảm bảo nhà sản xuất tại Trung Quốc cung cấp đầy đủ chứng từ chứng minh xuất xứ nguyên vật liệu.</p>
-      
-      <h2>3. Lưu ý khi làm thủ tục tại cửa khẩu đường bộ</h2>
-      <p>Đối với tuyến đường bộ Việt - Trung, đặc biệt qua cửa khẩu Hữu Nghị và Tân Thanh, quy định kiểm hóa đã có sự thay đổi. Tỷ lệ kiểm tra ngẫu nhiên đối với các mặt hàng rủi ro cao như hàng tiêu dùng, mỹ phẩm, thực phẩm chức năng đã tăng lên 15%. Doanh nghiệp cần lưu ý:</p>
+      <h2>2. Bài Toán Tối Ưu Thời Gian Thông Quan</h2>
+      <p>Tình trạng ùn ứ tại cửa khẩu thường diễn ra vào mùa cao điểm (trước Tết Nguyên Đán, mùa thu hoạch nông sản). Để tránh rủi ro, doanh nghiệp cần:</p>
       <ul>
-        <li>Khai báo chính xác mã HS code ngay từ đầu để tránh bị chuyển luồng.</li>
-        <li>Chuẩn bị sẵn sàng bộ chứng từ giấy để xuất trình khi có yêu cầu kiểm tra đột xuất.</li>
-        <li>Sử dụng dịch vụ của các đơn vị Forwarder uy tín có kinh nghiệm xử lý hàng tại bãi kiểm hóa.</li>
+        <li>Lựa chọn cửa khẩu phù hợp với loại hình hàng hóa (VD: Hàng tiêu dùng thường qua Tân Thanh, hàng máy móc công trình qua Hữu Nghị).</li>
+        <li>Chuẩn bị bộ chứng từ điện tử sớm, khai báo hải quan trước khi xe hàng đến cửa khẩu.</li>
+        <li>Sử dụng dịch vụ xe tải liên vận để tránh phải sang tải tại bãi biên giới, giảm thiểu rủi ro hư hỏng hàng hóa.</li>
       </ul>
       
-      <blockquote>"Sự chuẩn bị kỹ lưỡng về chứng từ là chìa khóa để hàng hóa thông quan nhanh chóng, tiết kiệm chi phí lưu bãi và đảm bảo tiến độ kinh doanh." - Admin KTL</blockquote>
+      <h2>3. Xu Hướng Chuyển Đổi Số Trong Logistics</h2>
+      <p>Hệ thống Cửa khẩu số đang được áp dụng rộng rãi giúp tự động hóa nhiều khâu kiểm duyệt, giảm bớt thủ tục giấy tờ. Để nắm bắt kịp thời các quy trình mới nhất, các khóa học đào tạo tại Kỳ Tốc Academy liên tục cập nhật bộ quy chuẩn vận hành mới nhất từ hải quan hai nước.</p>
     `
   },
-  "bi-quyet-sourcing-hang-1688": {
-    title: "Bí quyết Sourcing Hàng 1688 Tận Xưởng, Tối Ưu TCO",
-    date: "05/09/2026",
-    author: "Ms. Anna",
-    category: "Mua hàng & Sourcing",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070",
-    content: `
-      <h2>1. Tại sao lại là 1688 mà không phải Taobao?</h2>
-      <p>1688.com là nền tảng bán buôn nội địa Trung Quốc thuộc tập đoàn Alibaba. Khác với Taobao dành cho bán lẻ (B2C/C2C), 1688 là nơi tập trung các xưởng sản xuất, nhà phân phối lớn (B2B). Nếu bạn đang muốn nhập hàng số lượng lớn để kinh doanh, 1688 là mỏ vàng không thể bỏ qua với mức giá tận gốc.</p>
-      
-      <h2>2. Quy trình 5 bước Sourcing 1688 tối ưu</h2>
-      <ul>
-        <li><strong>Bước 1: Tìm kiếm bằng hình ảnh và từ khóa.</strong> Sử dụng công cụ dịch thuật để tìm từ khóa tiếng Trung chính xác hoặc sử dụng tính năng tìm kiếm bằng hình ảnh (icon camera) trên app 1688.</li>
-        <li><strong>Bước 2: Lọc nhà cung cấp uy tín (Biểu tượng Đầu trâu).</strong> Ưu tiên các xưởng có biểu tượng Đầu trâu (Niutou) - đây là các xưởng đã được Alibaba xác thực năng lực sản xuất, diện tích nhà máy và doanh thu.</li>
-        <li><strong>Bước 3: Đọc hiểu chỉ số xưởng.</strong> Chú ý đến tỷ lệ khách hàng quay lại (Repurchase rate), tốc độ phản hồi, và đánh giá (review) thực tế từ các người mua trước.</li>
-        <li><strong>Bước 4: Đàm phán trực tiếp qua AliWangWang.</strong> Đừng bao giờ mua ngay với giá niêm yết. Hãy chat trực tiếp với xưởng để thương lượng giá khi mua số lượng lớn, xin mẫu thử (sample) và hỏi về phí vận chuyển nội địa (Freeship nội địa).</li>
-        <li><strong>Bước 5: Tính toán TCO (Tổng chi phí sở hữu).</strong> Giá vốn không chỉ là giá mua trên web. TCO = Giá sản phẩm + Phí ship nội địa Trung + Phí dịch vụ ủy thác + Phí vận chuyển Trung Việt + Thuế (nếu đi chính ngạch).</li>
-      </ul>
-      
-      <h2>3. Kinh nghiệm thực chiến từ chuyên gia</h2>
-      <p>Tại Kỳ Tốc Academy, chúng tôi luôn nhấn mạnh việc <em>"Không bỏ tất cả trứng vào một giỏ"</em>. Hãy luôn có 2-3 nhà cung cấp dự phòng cho một sản phẩm. Điều này không chỉ giúp bạn so sánh giá mà còn đảm bảo chuỗi cung ứng không bị đứt gãy nếu một xưởng gặp sự cố sản xuất.</p>
-    `
-  },
-  "huong-dan-lap-packing-list": {
-    title: "Hướng dẫn lập Packing List và Commercial Invoice chuẩn 100%",
-    date: "01/09/2026",
+  "thue-nhap-khau-tu-trung-quoc-ve-viet-nam": {
+    title: "Biểu thuế xuất nhập khẩu ưu đãi đặc biệt ACFTA: Những điều cần biết",
+    date: "25/08/2026",
     author: "Ms. Hương",
-    category: "Nghiệp vụ",
+    category: "Kiến thức Logistics",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070",
     content: `
-      <h2>1. Tầm quan trọng của Packing List và Commercial Invoice</h2>
-      <p>Trong bộ chứng từ xuất nhập khẩu, Packing List (Phiếu đóng gói) và Commercial Invoice (Hóa đơn thương mại) là hai tài liệu xương sống. Mọi sai sót nhỏ về số lượng, trọng lượng, hay mô tả hàng hóa trên hai chứng từ này đều có thể dẫn đến việc hải quan giữ hàng, phạt hành chính, hoặc yêu cầu kiểm hóa 100%.</p>
+      <h2>1. ACFTA Là Gì?</h2>
+      <p>ACFTA (Khu vực Thương mại tự do ASEAN - Trung Quốc) mang lại lợi thế vô cùng lớn cho các nhà nhập khẩu Việt Nam. Hàng ngàn dòng thuế được cắt giảm về 0% nếu hàng hóa đáp ứng được các quy tắc xuất xứ nội khối.</p>
       
-      <h2>2. Cách lập Commercial Invoice (Hóa đơn thương mại)</h2>
-      <p>Commercial Invoice không chỉ là chứng từ thanh toán mà còn là căn cứ để hải quan tính thuế. Các trường thông tin bắt buộc phải có:</p>
+      <h2>2. Điều Kiện Để Hưởng Thuế Suất Ưu Đãi</h2>
+      <p>Để áp dụng mức thuế suất nhập khẩu ACFTA, lô hàng phải có Giấy chứng nhận xuất xứ (C/O) Form E hợp lệ. Một số lưu ý quan trọng về Form E:</p>
       <ul>
-        <li><strong>Thông tin người bán (Seller/Exporter) và người mua (Buyer/Importer):</strong> Tên công ty, địa chỉ, số điện thoại, mã số thuế (nếu có).</li>
-        <li><strong>Số Invoice và Ngày phát hành:</strong> Rất quan trọng để đối chiếu.</li>
-        <li><strong>Mô tả hàng hóa (Description of Goods):</strong> Phải chi tiết, rõ ràng, khớp với HS code dự kiến khai báo. Tránh dùng từ ngữ chung chung.</li>
-        <li><strong>Số lượng, Đơn giá, Tổng tiền:</strong> Rõ ràng loại tiền tệ (USD, CNY, VND...).</li>
-        <li><strong>Điều kiện giao hàng (Incoterms):</strong> Ví dụ: FOB Shanghai, CIF Hai Phong, DAP Hanoi (Incoterms 2020). Đây là cơ sở để xác định trị giá tính thuế.</li>
-      </ul>
-
-      <h2>3. Cách lập Packing List (Phiếu đóng gói)</h2>
-      <p>Nếu Invoice trả lời câu hỏi "Hàng giá bao nhiêu?", thì Packing List trả lời câu hỏi "Hàng được đóng gói như thế nào?".</p>
-      <ul>
-        <li>Quy cách đóng gói: Bao nhiêu kiện (CTN, PLT, ROLL...), kích thước mỗi kiện (Dimension).</li>
-        <li>Trọng lượng tịnh (Net Weight - N.W) và Trọng lượng cả bì (Gross Weight - G.W). Tổng G.W trên Packing List <strong>bắt buộc phải khớp</strong> với G.W trên Vận đơn (Bill of Lading / Airway Bill).</li>
-        <li>Số hiệu kiện hàng (Shipping Marks) để dễ dàng nhận diện tại kho bãi.</li>
+        <li>Thông tin trên Form E (Tên hàng, HS code, số lượng, trọng lượng) phải khớp 100% với Invoice, Packing List và Tờ khai hải quan.</li>
+        <li>Phải là Form E do các cơ quan có thẩm quyền cấp (như CCPIT hoặc Hải quan Trung Quốc).</li>
+        <li>Trường hợp có bên thứ 3 xuất hóa đơn (Third Party Invoicing), cần tick đúng vào ô số 13 và ghi rõ thông tin công ty phát hành Invoice.</li>
       </ul>
       
-      <p><em>Lời khuyên:</em> Luôn tạo thói quen kiểm tra chéo (cross-check) dữ liệu giữa Invoice, Packing List và Bill of Lading trước khi truyền tờ khai hải quan.</p>
+      <h2>3. Cách Tra Cứu HS Code Và Thuế Suất</h2>
+      <p>Việc áp mã HS (HS code) sai có thể dẫn đến việc bị truy thu thuế hoặc phạt vi phạm hành chính. Bạn có thể sử dụng biểu thuế xuất nhập khẩu hàng năm hoặc tra cứu trực tuyến trên hệ thống Hải quan. Nếu bạn cần được đào tạo nghiệp vụ làm chứng từ chuẩn xác, Kỳ Tốc Academy cung cấp các module học chuyên sâu về Phân loại hàng hóa và Xuất xứ.</p>
     `
   }
 };
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
   // Try to find the specific blog post, otherwise fallback to a generic one
-  const post = blogPosts[params.slug as keyof typeof blogPosts] || {
+  const post = blogPosts[resolvedParams.slug as keyof typeof blogPosts] || {
     title: "Bài viết chuyên đề Logistics và Supply Chain",
     date: "10/09/2026",
     author: "Ban Biên Tập Kỳ Tốc",
@@ -107,7 +143,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   return (
     <div className="bg-background min-h-screen pb-20">
       {/* Article Header */}
-      <div className="relative w-full h-[40vh] min-h-[400px] flex items-end pb-16">
+      <div className="relative w-full h-[40vh] min-h-[400px] flex items-end pb-40">
         <div 
           className="absolute inset-0 bg-cover bg-center" 
           style={{ backgroundImage: `url('${post.image}')` }}
