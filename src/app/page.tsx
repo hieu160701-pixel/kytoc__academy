@@ -172,29 +172,29 @@ export default function HomePage() {
             <InstructorCard
               name="Ms. Thoa"
               role="Head of Purchasing"
-              company="Đông Đô"
-              image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576"
+              company="CÔNG TY CỔ PHẦN XÂY DỰNG ĐÔNG ĐÔ VIỆT NAM"
+              description="Kinh nghiệm 20 năm Mua hàng trong lĩnh vực nội thất"
               color="primary"
             />
             <InstructorCard
               name="Mr. Đạo"
               role="Head of Purchasing"
               company="CĐT Luxora Vĩnh Yên, Bắc Giang"
-              image="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574"
+              description="Kinh nghiệm 25 năm Quản lý chuỗi cung ứng cho các dự án chung cư cao tầng"
               color="green"
             />
             <InstructorCard
               name="Ms. Hoa"
               role="Head of Purchasing"
-              company="Kỳ Tốc"
-              image="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661"
+              company="Kỳ Tốc Logistics"
+              description="Xử lí hơn 1000 đơn mua hàng với mạng lưới NCC khắp Trung Quốc"
               color="teal"
             />
             <InstructorCard
-              name="Ms. Linh"
+              name="Ms. Linh Đan"
               role="Giám đốc Điều hành"
-              company="Kỳ Tốc"
-              image="https://images.unsplash.com/photo-1598550874175-4d0ef43ee90d?q=80&w=2661"
+              company="Kỳ Tốc Logistics"
+              description="Quản lý chuỗi cung ứng cho 200 khách hàng SMEs tại Việt Nam"
               color="blue"
             />
           </div>
@@ -211,37 +211,33 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <InstructorCard
-              name="Anh Trần Văn A"
-              role="Supply Chain Manager"
-              company="Công ty TNHH ABC Việt Nam"
-              image="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2574"
+              name="Bùi Thu Trang (2001)"
+              role="Chuyên viên mua hàng - Phòng Vật tư"
+              company="Công ty TNHH Điện lạnh Hòa Phát"
+              image="/images/alumni/student1.jpg"
               color="teal"
             />
             <InstructorCard
-              name="Chị Nguyễn Thị B"
-              role="Trưởng phòng Mua hàng"
-              company="Tập đoàn Thương mại XYZ"
-              image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576"
+              name="Hoàng Kim Cúc (1999)"
+              role="Chuyên viên mua hàng"
+              company="Công ty Cổ phần 5S Fashion"
+              image="/images/alumni/student2.jpg"
               color="primary"
             />
             <InstructorCard
-              name="Anh Lê Hoàng C"
-              role="Chuyên viên Xuất Nhập Khẩu"
-              company="Logistics Forwarder HN"
-              image="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574"
+              name="Bùi Ngọc Trâm (2001)"
+              role="Chuyên viên XNK"
+              company="Công ty Máy xây dựng Hải Âu"
+              image="/images/alumni/student3.jpg"
               color="blue"
             />
             <InstructorCard
-              name="Chị Phạm Thu D"
-              role="Sourcing Specialist"
-              company="Công ty Nội thất Global"
-              image="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661"
+              name="Ngô Thuý Chinh (2001)"
+              role="Chuyên viên khai báo Hải quan"
+              company="Công ty TNHH Fukang Technology"
+              image="/images/alumni/student4.png"
               color="green"
             />
-          </div>
-          
-          <div className="text-center mt-12">
-            <p className="text-foreground/60 text-sm mb-4">Bạn có thể gửi hình ảnh thực tế của học viên sau để thay thế cho các ảnh minh họa phía trên.</p>
           </div>
         </div>
       </section>

@@ -5,29 +5,29 @@ export default function InstructorsPage() {
     {
       name: "Ms. Thoa",
       role: "Head of Purchasing",
-      company: "Đông Đô",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576",
+      company: "CÔNG TY CỔ PHẦN XÂY DỰNG ĐÔNG ĐÔ VIỆT NAM",
+      description: "Kinh nghiệm 20 năm Mua hàng trong lĩnh vực nội thất",
       color: "primary",
     },
     {
       name: "Mr. Đạo",
       role: "Head of Purchasing",
       company: "CĐT Luxora Vĩnh Yên, Bắc Giang",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574",
+      description: "Kinh nghiệm 25 năm Quản lý chuỗi cung ứng cho các dự án chung cư cao tầng",
       color: "green",
     },
     {
       name: "Ms. Hoa",
       role: "Head of Purchasing",
-      company: "Kỳ Tốc",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661",
+      company: "Kỳ Tốc Logistics",
+      description: "Xử lí hơn 1000 đơn mua hàng với mạng lưới NCC khắp Trung Quốc",
       color: "teal",
     },
     {
-      name: "Ms. Linh",
+      name: "Ms. Linh Đan",
       role: "Giám đốc Điều hành",
-      company: "Kỳ Tốc",
-      image: "https://images.unsplash.com/photo-1598550874175-4d0ef43ee90d?q=80&w=2661",
+      company: "Kỳ Tốc Logistics",
+      description: "Quản lý chuỗi cung ứng cho 200 khách hàng SMEs tại Việt Nam",
       color: "blue",
     }
   ];
