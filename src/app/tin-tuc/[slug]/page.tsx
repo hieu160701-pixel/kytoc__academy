@@ -110,7 +110,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       <div className="relative w-full h-[40vh] min-h-[400px] flex items-end pb-16">
         <div 
           className="absolute inset-0 bg-cover bg-center" 
-          style={{ backgroundImage: \`url('\${post.image}')\` }}
+          style={{ backgroundImage: `url('${post.image}')` }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
         
