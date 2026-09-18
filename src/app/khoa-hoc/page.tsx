@@ -3,58 +3,37 @@ import { CourseCard } from "@/components/ui/CourseCard";
 export default function CoursesPage() {
   const courses = [
     {
-      title: "Logistics cho người mới",
+      title: "Nghiệp vụ Logistics – Xuất nhập khẩu cho người mới",
       slug: "logistics-cho-nguoi-moi",
       track: "Logistics",
       color: "bg-teal-700",
       duration: "18 buổi",
       format: "Offline / Hybrid",
-      description: "Tổng quan vận hành SCM. Tuyến TQ-VN, Incoterms trên tuyến bộ, đặc tả hàng từ packing list.",
-      instructor: "Ms. Linh (Giám đốc Điều hành)",
+      description: "Trang bị kiến thức nền tảng và quy trình vận hành Logistics trong Xuất nhập khẩu – Chuỗi cung ứng.",
+      instructor: "Nguyễn Thị Linh (Giám đốc Điều hành)",
       bgImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070",
     },
     {
-      title: "Mua hàng thực chiến",
+      title: "Mua hàng & Tìm nguồn cung",
       slug: "mua-hang-thuc-chien",
       track: "Mua hàng",
       color: "bg-green-700",
       duration: "14 buổi",
       format: "Offline / Hybrid",
-      description: "Vai trò Purchasing, Sourcing 1688, phân tích TCO, hoàn thuế XK TQ, đàm phán hợp đồng.",
-      instructor: "Ms. Thoa (Head of Purchasing)",
+      description: "Trang bị năng lực Mua hàng & Tìm nguồn cung từ xác định nhu cầu, đánh giá nhà cung cấp, đến đàm phán.",
+      instructor: "Phan Thị Hoa (Trưởng phòng Mua hàng)",
       bgImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070",
     },
+
     {
-      title: "Kho vận Trung-Việt",
-      slug: "kho-van-trung-viet",
-      track: "Kho vận",
-      color: "bg-purple-700",
-      duration: "10 buổi",
-      format: "Offline / Hybrid",
-      description: "Quy trình lưu kho bãi, đóng gói chuẩn xuất khẩu, điều phối xe tải, khai thác hàng rời.",
-      instructor: "Ms. Hoa (Head of Purchasing)",
-      bgImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070",
-    },
-    {
-      title: "Chứng từ & Hải quan",
-      slug: "chung-tu-hai-quan",
-      track: "Chứng từ",
-      color: "bg-blue-600",
-      duration: "12 buổi",
-      format: "Offline / Hybrid",
-      description: "Đọc hiểu CO, CQ, BL, tờ khai hải quan. Phân luồng, tra mã HS code, xử lý C/O Form E.",
-      instructor: "Ms. Linh (Giám đốc Điều hành)",
-      bgImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070",
-    },
-    {
-      title: "Supply Chain Manager",
+      title: "Quản trị chuỗi cung ứng",
       slug: "supply-chain-manager",
       track: "SCM Manager",
       color: "bg-blue-800",
       duration: "12 buổi",
       format: "Offline / Hybrid",
-      description: "Khóa học Flagship. Engine 5 bước A1-A4, TCO trước khi chạy đơn, P&L giải pháp vận hành.",
-      instructor: "Mr. Đạo (Head of Purchasing)",
+      description: "Chương trình chuyên sâu dành cho nhân sự quản lý Chuỗi cung ứng, tập trung vào tư duy quản trị xuyên suốt.",
+      instructor: "Trần Hưng Đạo (Trưởng phòng Đấu thầu đầu tư)",
       bgImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070",
       isHot: true,
     }
@@ -66,7 +45,7 @@ export default function CoursesPage() {
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Danh sách Khóa học</h1>
           <p className="text-lg text-foreground/70 max-w-2xl">
-            Các lộ trình đào tạo chuyên sâu được xây dựng từ thực tiễn. Học trên chứng từ thật, xử lý case study thực tế từ hệ thống kho vận Kỳ Tốc.
+            Các chương trình đào tạo chuyên sâu được xây dựng từ thực tiễn doanh nghiệp, giúp học viên phát triển năng lực nghề nghiệp thông qua quy trình, chứng từ, đơn hàng và tình huống thực tế trong Mua hàng – Xuất nhập khẩu – Logistics – Quản trị Chuỗi cung ứng.
           </p>
         </div>
 

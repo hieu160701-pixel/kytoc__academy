@@ -26,7 +26,7 @@ export function InstructorCard({ name, role, company, image, description, color 
     <div className="flex flex-col items-center text-center group cursor-pointer bg-card p-6 rounded-xl border border-border shadow-sm hover:border-gray-300 hover:shadow-xl transition-all h-full">
       {image && (
         <div className={`w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-white shadow-lg ${borderColor} transition-colors flex-shrink-0`}>
-          <div className="w-full h-full bg-gray-300 bg-cover bg-center" style={{ backgroundImage: `url('${image}')` }}></div>
+          <div className={`w-full h-full bg-top ${image?.includes('phan-thi-hoa') ? 'bg-white bg-contain bg-no-repeat' : 'bg-gray-300 bg-cover'}`} style={{ backgroundImage: `url('${image}')` }}></div>
         </div>
       )}
       <h3 className={`text-xl font-bold ${textColor} transition-colors ${!image ? 'mb-2' : ''}`}>{name}</h3>

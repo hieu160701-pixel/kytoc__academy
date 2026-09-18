@@ -10,7 +10,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="h-12 flex items-center">
-              <img src="/logo.jpg" alt="Kỳ Tốc Academy" className="h-full w-auto object-contain" />
+              <img src="/images/partners/partner2.png" alt="Kỳ Tốc Academy" className="h-full w-auto object-contain" />
             </div>
           </Link>
           

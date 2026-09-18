@@ -34,7 +34,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Hotline</h3>
-                  <p className="text-foreground/70 text-sm">098.765.4321 (Tư vấn tuyển sinh)</p>
+                  <p className="text-foreground/70 text-sm">0904.066.068 (Tư vấn tuyển sinh)</p>
                 </div>
               </div>
               
@@ -94,9 +94,9 @@ export default function ContactPage() {
                   <div>
                     <label className="block text-sm font-medium mb-1">Khóa học quan tâm</label>
                     <select className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/50">
-                      <option>Logistics cho người mới</option>
-                      <option>Mua hàng thực chiến</option>
-                      <option>Supply Chain Manager</option>
+                      <option>Nghiệp vụ Logistics – Xuất nhập khẩu cho người mới</option>
+                      <option>Mua hàng & Tìm nguồn cung</option>
+                      <option>Quản trị chuỗi cung ứng</option>
                       <option>Chưa xác định - Cần tư vấn</option>
                     </select>
                   </div>

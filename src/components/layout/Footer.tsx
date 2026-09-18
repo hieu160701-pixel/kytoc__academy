@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6">
               <div className="bg-white p-2 rounded-lg inline-block">
-                <img src="/logo.jpg" alt="Kỳ Tốc Academy" className="h-12 w-auto object-contain" />
+                <img src="/images/partners/partner2.png" alt="Kỳ Tốc Academy" className="h-12 w-auto object-contain bg-white p-1 rounded" />
               </div>
             </Link>
             <p className="text-sm text-foreground/70 mb-6">

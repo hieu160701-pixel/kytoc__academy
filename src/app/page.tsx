@@ -15,11 +15,11 @@ export default function HomePage() {
         <div className="container relative z-10 mx-auto px-4 text-center md:text-left">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-              Học viện nghiệp vụ SCM<br />
-              <span className="text-primary">của người đang vận hành</span>
+              HỌC VIỆN ĐÀO TẠO SCM TRONG XUẤT NHẬP KHẨU<br />
+              <span className="text-primary text-2xl md:text-4xl font-medium mt-4 block">Đào tạo chuyên nghiệp – Kết nối toàn cầu – Phát triển bền vững</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
-              Học trên đơn thật — làm trên tuyến Trung-Việt. Chúng tôi đào tạo nghiệp vụ Supply Chain, Logistics và Mua hàng bằng quy trình thực chiến.
+            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto md:mx-0">
+              Đào tạo toàn diện các nghiệp vụ trong lĩnh vực Xuất nhập khẩu – Logistics – Supply Chain, từ Mua hàng & Sourcing, Sales/Customer Service, Chứng từ XNK, Hải quan, Vận tải, Kho vận đến Kế toán & Tuân thủ. Chương trình được thiết kế theo workflow thực tế của doanh nghiệp, giúp học viên hiểu toàn bộ chuỗi vận hành, sự liên kết giữa các bộ phận và phát triển năng lực chuyên môn theo từng vị trí nghề nghiệp.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link href="/khoa-hoc">
@@ -37,7 +37,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Sự khác biệt tại Kỳ Tốc</h2>
-            <p className="text-foreground/70 max-w-2xl mx-auto">Không lý thuyết suông. Mọi kiến thức đều được đúc kết từ hệ thống vận hành thực tế đang chạy hàng ngàn đơn hàng mỗi ngày.</p>
+            <p className="text-foreground/70 max-w-2xl mx-auto">Không học nghiệp vụ rời rạc. Học viên được tiếp cận quy trình thực tế, hiểu sự liên kết giữa các bộ phận và nắm được cách toàn bộ chuỗi Xuất nhập khẩu – Logistics – Supply Chain vận hành trong doanh nghiệp.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -46,10 +46,10 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-4">
                   <BookOpen className="w-8 h-8" />
                 </div>
-                <CardTitle className="text-xl">Học trên đơn thật</CardTitle>
+                <CardTitle className="text-xl">Học từ đơn hàng thực tế</CardTitle>
               </CardHeader>
               <CardContent className="text-center text-foreground/70">
-                Case study từ packing list thực tế, incoterms trên tuyến bộ (EXW, FCA, DAF) - không sử dụng case giả định.
+                Học và phân tích trực tiếp từ đơn hàng, chứng từ, quy trình và tình huống thực tế trong Mua hàng, Xuất nhập khẩu, Logistics và Quản trị Chuỗi cung ứng trên nhiều thị trường và phương thức vận tải.
               </CardContent>
             </Card>
 
@@ -58,10 +58,10 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-2xl bg-blue-600/10 flex items-center justify-center text-blue-600 mb-4">
                   <GraduationCap className="w-8 h-8" />
                 </div>
-                <CardTitle className="text-xl">Giảng từ người đang làm</CardTitle>
+                <CardTitle className="text-xl">Học từ người đang làm nghề</CardTitle>
               </CardHeader>
               <CardContent className="text-center text-foreground/70">
-                Đội ngũ giảng viên là các Head đang trực tiếp vận hành: H1 Mua hàng, H2 Chứng từ, H3/H4 Kho TQ & VN.
+                Đội ngũ giảng viên là các chuyên gia và nhà quản lý đang trực tiếp làm việc trong ngành, mang kinh nghiệm và bài toán thực tế vào từng nội dung đào tạo.
               </CardContent>
             </Card>
 
@@ -70,10 +70,10 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-2xl bg-green-600/10 flex items-center justify-center text-green-600 mb-4">
                   <BriefcaseBusiness className="w-8 h-8" />
                 </div>
-                <CardTitle className="text-xl">Thực tập tại Kỳ Tốc</CardTitle>
+                <CardTitle className="text-xl">Kết nối mạng lưới nghề nghiệp</CardTitle>
               </CardHeader>
               <CardContent className="text-center text-foreground/70">
-                Trải nghiệm thực tế tại hệ thống kho HN / HCM / TQ. Ưu tiên tuyển dụng nội bộ cho học viên xuất sắc.
+                Kết nối học viên – giảng viên – chuyên gia – doanh nghiệp – đối tác, mở rộng cơ hội học hỏi, phát triển nghề nghiệp, hợp tác kinh doanh trong nước và quốc tế.
               </CardContent>
             </Card>
           </div>
@@ -98,7 +98,7 @@ export default function HomePage() {
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">3</div>
-              <div className="text-sm md:text-base text-white/80">Hệ thống kho thực tế</div>
+              <div className="text-sm md:text-base text-white/80">Hệ thống kho vận hành trong và ngoài nước</div>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="flex justify-between items-end mb-12">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Khóa học tiêu biểu</h2>
-              <p className="text-foreground/70">Các lộ trình đào tạo chuyên sâu được xây dựng từ thực tiễn.</p>
+              <p className="text-foreground/70">Các lộ trình đào tạo chuyên sâu được xây dựng từ nhu cầu thực tế của doanh nghiệp trong bối cảnh chuỗi cung ứng toàn cầu đang ngày càng phát triển.</p>
             </div>
             <Link href="/khoa-hoc" className="hidden md:flex text-primary font-medium hover:underline items-center">
               Xem tất cả <span className="ml-1">→</span>
@@ -119,36 +119,36 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <CourseCard
-              title="Logistics cho người mới"
+              title="Nghiệp vụ Logistics – Xuất nhập khẩu cho người mới"
               slug="logistics-cho-nguoi-moi"
               track="Logistics"
               color="bg-teal-700"
               duration="18 buổi"
               format="Offline / Hybrid"
-              description="Tổng quan vận hành SCM. Tuyến TQ-VN, Incoterms trên tuyến bộ, đặc tả hàng từ packing list."
-              instructor="Ms. Linh (Giám đốc Điều hành)"
+              description="Trang bị kiến thức nền tảng và quy trình vận hành Logistics trong Xuất nhập khẩu – Chuỗi cung ứng."
+              instructor="Nguyễn Thị Linh (Giám đốc Điều hành)"
               bgImage="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070"
             />
             <CourseCard
-              title="Mua hàng thực chiến"
+              title="Mua hàng & Tìm nguồn cung"
               slug="mua-hang-thuc-chien"
               track="Mua hàng"
               color="bg-green-700"
               duration="14 buổi"
               format="Offline / Hybrid"
-              description="Vai trò Purchasing, Sourcing 1688, phân tích TCO, hoàn thuế XK TQ, đàm phán hợp đồng."
-              instructor="Ms. Thoa (Head of Purchasing)"
+              description="Trang bị năng lực Mua hàng & Tìm nguồn cung từ xác định nhu cầu, đánh giá nhà cung cấp, đến đàm phán."
+              instructor="Phan Thị Hoa (Trưởng phòng Mua hàng)"
               bgImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070"
             />
             <CourseCard
-              title="Supply Chain Manager"
+              title="Quản trị chuỗi cung ứng"
               slug="supply-chain-manager"
               track="SCM Manager"
               color="bg-blue-800"
               duration="12 buổi"
               format="Offline / Hybrid"
-              description="Khóa học Flagship. Engine 5 bước A1-A4, TCO trước khi chạy đơn, P&L giải pháp vận hành."
-              instructor="Mr. Đạo (Head of Purchasing)"
+              description="Chương trình chuyên sâu dành cho nhân sự quản lý Chuỗi cung ứng, tập trung vào tư duy quản trị xuyên suốt."
+              instructor="Trần Hưng Đạo (Trưởng phòng Đấu thầu đầu tư)"
               bgImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070"
               isHot={true}
             />
@@ -165,37 +165,49 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Đội ngũ Giảng viên</h2>
-            <p className="text-foreground/70 max-w-2xl mx-auto">Học từ những người đang trực tiếp chạy hàng ngàn đơn hàng mỗi ngày.</p>
+            <p className="text-foreground/70 max-w-2xl mx-auto">Học từ những người đang làm nghề – các chuyên gia và nhà quản lý đang giữ vị trí chủ chốt trong Xuất nhập khẩu – Logistics – Supply Chain tại nhiều lĩnh vực khác nhau.</p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             <InstructorCard
-              name="Ms. Thoa"
+              name="Phan Thị Hoa"
+              role="Trưởng phòng Mua hàng"
+              company="Kỳ Tốc Logistics"
+              description="Xử lí hơn 1000 đơn mua hàng từ mạng lưới NCC Trung Quốc"
+              color="teal"
+              image="/images/instructors/phan-thi-hoa.jpg"
+            />
+            <InstructorCard
+              name="Trần Hưng Đạo"
+              role="Trưởng phòng Đấu thầu đầu tư"
+              company="Tập đoàn Luxora"
+              description="Kinh nghiệm 25 năm Quản lý chuỗi cung ứng"
+              color="green"
+              image="/images/instructors/tran-hung-dao.jpg"
+            />
+            <InstructorCard
+              name="Nguyễn Thị Thoa"
               role="Head of Purchasing"
-              company="CÔNG TY CỔ PHẦN XÂY DỰNG ĐÔNG ĐÔ VIỆT NAM"
+              company="Công ty cổ phần thương mại công nghiệp Deka Furniture"
               description="Kinh nghiệm 20 năm Mua hàng trong lĩnh vực nội thất"
               color="primary"
+              image="/images/instructors/nguyen-thi-thoa.jpg"
             />
             <InstructorCard
-              name="Mr. Đạo"
-              role="Head of Purchasing"
-              company="CĐT Luxora Vĩnh Yên, Bắc Giang"
-              description="Kinh nghiệm 25 năm Quản lý chuỗi cung ứng cho các dự án chung cư cao tầng"
-              color="green"
+              name="Trần Phương Anh"
+              role="Giám đốc Điều hành"
+              company="Công ty TNHH Công nghiệp và TM Hosung VN"
+              description="Quản lý chuỗi cung ứng cho 200 khách hàng SMEs tại Việt Nam"
+              color="primary"
+              image="/images/instructors/tran-phuong-anh.jpg"
             />
             <InstructorCard
-              name="Ms. Hoa"
-              role="Head of Purchasing"
-              company="Kỳ Tốc Logistics"
-              description="Xử lí hơn 1000 đơn mua hàng với mạng lưới NCC khắp Trung Quốc"
-              color="teal"
-            />
-            <InstructorCard
-              name="Ms. Linh Đan"
+              name="Nguyễn Thị Linh"
               role="Giám đốc Điều hành"
               company="Kỳ Tốc Logistics"
               description="Quản lý chuỗi cung ứng cho 200 khách hàng SMEs tại Việt Nam"
               color="blue"
+              image="/images/instructors/nguyen-thi-linh.jpg"
             />
           </div>
         </div>
@@ -206,7 +218,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Học viên tiêu biểu</h2>
-            <p className="text-foreground/70 max-w-2xl mx-auto">Những gương mặt xuất sắc đã áp dụng thành công kiến thức thực chiến vào lộ trình thăng tiến sự nghiệp.</p>
+            <p className="text-foreground/70 max-w-2xl mx-auto">Những học viên đã đưa kiến thức học được từ Kỳ Tốc vào thực tiễn, nâng cao năng lực nghề nghiệp và xây dựng mạng lưới nghề nghiệp giá trị trong hành trình phát triển sự nghiệp.</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -245,10 +257,9 @@ export default function HomePage() {
       {/* Partners Section */}
       <section className="py-16 bg-white border-y">
         <div className="container mx-auto px-4">
-          <p className="text-center text-foreground/50 font-medium mb-8 uppercase tracking-wider">Hệ sinh thái hậu thuẫn & Đối tác doanh nghiệp</p>
+          <p className="text-center text-foreground/50 font-medium mb-8 uppercase tracking-wider">Hệ sinh thái trải rộng các ngành nghề</p>
           <div className="flex flex-wrap justify-center items-center gap-12 transition-all duration-500">
             <img src="/images/partners/partner2.png" alt="Kỳ Tốc Logistics" className="h-12 md:h-16 object-contain" />
-            <img src="/images/partners/partner1.png" alt="DEKA Furniture" className="h-12 md:h-16 object-contain" />
             <img src="/images/partners/partner3.png" alt="Beta Cinemas" className="h-12 md:h-16 object-contain" />
             <img src="/images/partners/partner4.png" alt="AEON" className="h-12 md:h-16 object-contain" />
             <img src="/images/partners/partner5.png" alt="1688" className="h-12 md:h-16 object-contain" />
@@ -296,11 +307,11 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Hệ Sinh Thái Vận Hành Thực Tế</h2>
             <p className="text-foreground/70 max-w-3xl mx-auto">
-              Học viên tại Kỳ Tốc Academy không chỉ học trên giấy. Các bạn được tiếp xúc và xử lý các case study từ mạng lưới doanh nghiệp thực tế của chúng tôi.
+              Kỳ Tốc Academy kết nối hệ sinh thái doanh nghiệp, chuyên gia và đối tác đa ngành đa nghề, tạo điều kiện để học viên tiếp cận, thực hành và thử sức với các bài toán thực tế trong Mua hàng, Xuất nhập khẩu, Logistics và Quản trị Chuỗi cung ứng.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-12 max-w-3xl mx-auto">
             {/* Ky Toc Logistics */}
             <div className="flex flex-col md:flex-row gap-6 items-center md:items-start bg-card p-6 rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
               <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center p-2 bg-white rounded-xl shadow-sm border">
@@ -308,20 +319,8 @@ export default function HomePage() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-2">Kỳ Tốc Logistics</h3>
-                <p className="text-foreground/70 text-sm mb-4">Đơn vị Vận tải đa phương thức & Dịch vụ XNK. Xử lý hàng ngàn container trên tuyến Trung - Việt với hệ thống kho bãi trực tiếp tại Quảng Châu, Bằng Tường, Hà Nội, TP.HCM. Đặc biệt, đội ngũ giảng viên còn có sự góp mặt của các Head Cung ứng từ chính mạng lưới khách hàng doanh nghiệp lớn của chúng tôi.</p>
-                <div className="text-xs font-medium px-3 py-1 bg-gray-100 rounded-full inline-block">Nơi học viên thực hành thủ tục Hải quan</div>
-              </div>
-            </div>
-
-            {/* DEKA Furniture */}
-            <div className="flex flex-col md:flex-row gap-6 items-center md:items-start bg-card p-6 rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center p-2 bg-white rounded-xl shadow-sm border">
-                <img src="/images/partners/partner1.png" alt="DEKA Furniture" className="max-w-full max-h-full object-contain" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2">DEKA Furniture</h3>
-                <p className="text-foreground/70 text-sm mb-4">Công ty CP Thương mại Công nghiệp DEKA - Đối tác chiến lược kiến tạo không gian. Cung ứng danh mục hàng hóa đa dạng từ máy móc, vật tư xây dựng, vật tư hoàn thiện đến nội thất. Tham gia các dự án quy mô lớn: rạp phim (Beta, Aeon), bệnh viện, dự án nhà ở thương mại & NOXH (2000-4000 căn hộ), và các resort khách sạn (500-1000 phòng).</p>
-                <div className="text-xs font-medium px-3 py-1 bg-gray-100 rounded-full inline-block">Nguồn Case study Mua hàng & Sourcing 1688</div>
+                <p className="text-foreground/70 text-sm mb-4">Đối tác vận hành trong hệ sinh thái Kỳ Tốc, cung cấp các giải pháp vận tải đa phương thức, xuất nhập khẩu, hải quan và chuỗi cung ứng. Các đơn hàng, dự án thực tế là nguồn dữ liệu quan trọng cho hoạt động đào tạo và phân tích tại Academy.</p>
+                <div className="text-xs font-medium px-3 py-1 bg-gray-100 rounded-full inline-block">Nơi học viên được thực hành như một chuyên viên xuất nhập khẩu</div>
               </div>
             </div>
           </div>
@@ -332,9 +331,9 @@ export default function HomePage() {
       <section className="py-24 bg-card border-y relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-primary/5 pattern-dots-md text-primary/10"></div>
         <div className="container relative z-10 mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">Sẵn sàng bước vào ngành Logistics?</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">Sẵn sàng nâng tầm năng lực và mở rộng mạng lưới nghề nghiệp chưa?</h2>
           <p className="text-lg text-foreground/70 mb-10 max-w-2xl mx-auto">
-            Gia nhập cộng đồng học viên Kỳ Tốc Academy ngay hôm nay để nhận được sự hướng dẫn trực tiếp từ các chuyên gia vận hành.
+            Học từ thực tiễn, kết nối cộng đồng đa ngành và mở rộng cơ hội nghề nghiệp, hợp tác trong môi trường kinh doanh toàn cầu.
           </p>
           <Button size="lg" className="rounded-full px-10 py-6 text-lg bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/20">
             Đăng ký nhận tư vấn ngay
