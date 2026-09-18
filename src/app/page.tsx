@@ -267,39 +267,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Gallery / Thực chiến Section */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Thực Chiến Không Chỉ Là Khẩu Hiệu</h2>
-            <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
-              Hình ảnh thực tế các hoạt động học tập, kiến tập tại kho bãi và những buổi xử lý chứng từ trực tiếp cùng chuyên gia của Kỳ Tốc Academy.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {/* Large Image - 2x2 */}
-            <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-2xl h-[400px]">
-              <img src="/images/gallery/pic2.jpg" alt="Hình ảnh thực tế Kỳ Tốc Academy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            </div>
-            
-            {/* Small Image 1 */}
-            <div className="relative group overflow-hidden rounded-2xl h-[192px]">
-              <img src="/images/gallery/pic1.jpg" alt="Hình ảnh thực tế Kỳ Tốc Academy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            </div>
-            
-            {/* Small Image 2 */}
-            <div className="relative group overflow-hidden rounded-2xl h-[192px]">
-              <img src="/images/gallery/pic4.jpg" alt="Hình ảnh thực tế Kỳ Tốc Academy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            </div>
-            
-            {/* Wide Image */}
-            <div className="col-span-2 relative group overflow-hidden rounded-2xl h-[192px]">
-              <img src="/images/gallery/pic3.jpg" alt="Hình ảnh thực tế Kỳ Tốc Academy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* 6.5 Hệ sinh thái thực chiến */}
       <section className="py-20 bg-background">
