@@ -28,8 +28,8 @@ export default function InstructorsPage() {
     },
     {
       name: "Trần Phương Anh",
-      role: "Giám đốc Điều hành",
-      company: "Công ty TNHH Công nghiệp và TM Hosung VN",
+      role: "Leader phòng Mua hàng",
+      company: "Công ty Cổ phần Đầu tư Công nghệ SHT",
       description: "Quản lý chuỗi cung ứng cho 200 khách hàng SMEs tại Việt Nam",
       color: "primary",
       image: "/images/instructors/tran-phuong-anh.jpg",
